@@ -1,0 +1,288 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     margin:0px;
+}
+header{
+     background-color: black;
+}
+h1{
+     color: yellow;
+     font-size: 2em;
+     margin-left: 20px;
+     padding-top: 10px;
+     float: left;
+}
+.c-hamburger {
+     float: right;
+     display: block;
+     position: relative;
+     overflow: hidden;
+     margin: 0;
+     padding: 0;
+     width: 96px;
+     height: 96px;
+     font-size: 0;
+     text-indent: -9999px;
+     appearance: none;
+     box-shadow: none;
+     border-radius: none;
+     border: none;
+     cursor: pointer;
+     transition: background 0.3s;
+     background-color: black;
+}
+
+.c-hamburger:focus {
+     outline: none;
+}
+.c-hamburger span {
+     display: block;
+     position: absolute;
+     top: 44px;
+     left: 18px;
+     right: 18px;
+     height: 8px;
+     background: yellow;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+     position: absolute;
+     display: block;
+     left: 0;
+     width: 100%;
+      height: 8px;
+      background-color: yellow;
+     content: "";
+}
+
+.c-hamburger span::before {
+     top: -20px;
+}
+
+.c-hamburger span::after {
+      bottom: -20px;
+}
+strong{
+     font-size: 15px;
+     text-transform: uppercase;
+     float: left;
+     font-weight: bold;
+}
+span{
+     color: gray;
+     text-decoration: line-through;
+}
+ins{
+     border-bottom: 3px solid yellow;
+     text-decoration: none;
+}
+
+a{
+     text-decoration: none;
+     color: white;
+     float: left;
+     display: block;
+}
+section h4{
+     text-align: center;
+     font-size: 2em;
+     font-family: 'Merriweather', serif;
+}
+h2{
+     font-size: 20px;
+    padding-top: 5px;
+}
+button{
+     text-transform: uppercase;
+}
+div h4{
+     font-size: 20px;
+     font-weight: 500;
+}
+div p{
+     font-size: 15px;
+}
+div button{
+     margin: 20px 0px 10px 0px;
+     font-size: 20px;
+     padding: 10px 25px;
+}
+main div button{
+     background-color: yellow;
+     font-family: 'Oswald', sans-serif;
+     font-weight: bold;
+}
+
+
+aside div button{
+     background-color: #C6C6C6;
+     width: 100%;
+}
+i{
+     font-style: italic;
+}
+b{
+     font-weight: bold;
+}
+footer p{
+     font-size: 18px;
+}
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+header{
+     
+}
+section{
+     background-color: rgb(170, 170, 170);
+     padding: 20px 30px;
+     border-top: 5px solid yellow;
+}
+
+
+main div{
+     float: right;
+     margin-top: 20px;
+     margin-right: 20px;
+     width: 50%;
+     padding: 25px;
+     background-color: rgba(230,230,230,0.8);
+     border: 1px solid black;
+     box-shadow: 0 0 5px rgba(0,0,0,.75)
+}
+main {
+     width: 100%;
+     height: 400px;
+     background: url(../images/coworking.jpg) center center no-repeat;
+     background-size: cover;
+     overflow: hidden;
+     padding: 3%;
+     box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+}
+aside{
+     float: left;
+     width: 100%;
+}
+aside div{
+     width: 100%;
+     display: block;
+     background-color: white;
+     padding: 20px 15px;
+     padding-bottom: 30px;
+
+}
+footer{
+     background-color: black;
+     color: white;
+     padding: 20px;
+     clear: both;
+}
+
+
+@media only screen and (min-width: 768px){
+     nav{
+     color: white;
+     background-color: black;
+     margin-left: 10%;
+}
+ul{
+     display: block;
+     padding: 1px 12px;
+     border-radius: 100px;
+     font-size: 1.3em;
+     margin: 0 5px 5px 0;
+     color: white;
+     text-decoration: none;
+}
+
+li{
+     display: block;
+     padding: 15px 13px;
+     float: left;
+}
+li:hover{
+     color: yellow;
+}
+main div{
+     float: right;
+     margin-top: 20px;
+     margin-right: 20px;
+     width: 34%;
+     padding: 25px;
+     background-color: rgba(230,230,230,0.8);
+     border: 1px solid black;
+     box-shadow: 0 0 5px rgba(0,0,0,.75)
+}
+aside div{
+     width: 33%;
+     display: inline-block;
+     background-color: white;
+     padding: 20px 15px;
+     padding-bottom: 30px;
+
+}
+aside div {
+     box-shadow: inset -1px 0 0 rgba(0,0,0,.15)
+}
+aside div:last-of-type{
+     box-shadow: none;
+}
+.c-hamburger{
+     display: none;
+}
+h1{
+     float: none;
+}
+}
